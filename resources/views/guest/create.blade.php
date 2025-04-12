@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-base-layout>
     <x-slot name="title">ブログ新規作成</x-slot>
     <x-slot name="slot">
 
@@ -22,4 +22,4 @@
         </div>
 
     </x-slot>
-</x-guest-layout>
+</x-base-layout>
