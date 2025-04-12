@@ -27,5 +27,10 @@ class BlogController extends Controller
 
         return redirect('/');
     }
+    public function delete(Request $request)
+    {
+        $article = \App\Models\Article::find($request->delete_id);
+        return view('guest.delete', compact('article'));
+    }
 
 }

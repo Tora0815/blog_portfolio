@@ -9,6 +9,10 @@ Route::get('/articles', [BlogController::class, 'index']);
 Route::post('/edit', [BlogController::class, 'edit']);
 Route::get('/new', fn () => view('guest.create'));
 Route::post('/create', [BlogController::class, 'create']);
+// 削除確認ページ（POSTでアクセス）
+Route::post('/delete', [BlogController::class, 'delete']);
+// ダイレクトアクセス防止用（GETアクセスされてもトップにリダイレクト）
+Route::get('/delete', fn () => redirect('/'));
 
 Route::get(
     '/dashboard', function () {
