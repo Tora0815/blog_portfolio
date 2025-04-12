@@ -1,6 +1,7 @@
-<x-guest-layout>
+<x-base-layout>
     <x-slot name="title">編集</x-slot>
     <x-slot name="slot">
+
         <div class="container mt-5">
             <h1>編集</h1>
             <form method="post" action="/change">
@@ -18,7 +19,9 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary">更新</button>
+                <a href="/" class="btn btn-secondary">キャンセル</a>
             </form>
         </div>
+
     </x-slot>
-</x-guest-layout>
+</x-base-layout>
